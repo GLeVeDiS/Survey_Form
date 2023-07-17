@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Ballon d'or 2023 Poll</title>
+   <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="title-border">
+      <h1 id="title">Ballon d’Or 2023</h1>
+    </div> 
+
+  <p id="description"> An opinion poll about the next Ballon d’Or Winner </p>
+  <form id="survey-form" method="GET">
+    <fieldset id="segment">
+      <div id="container">
+
+       <label id="name-label" for="name-label"> Name 
+          <input id="name" type="text" required placeholder="Enter your name" /></label>
+
+        <label id="email-label" for="email-label"> Email 
+          <input id="email" type="email" required placeholder="Enter your email" /></label>
+   
+        <label id="number-label" for="number-label"> Age (optional) 
+          <input id="number" type="number" placeholder="Input your age(years)" min="11" max="120"/></label>
+  
+        <label for="dropdown">How would you rate your knowledge of football? 
+
+         <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Novice</option>
+            <option value="2">Beginner</option>
+            <option value="3">Intermediate</option>
+            <option value="4">Advanced
+            </option>
+            <option value="5">Expert    
+            </option>
+            <option value="6">Prefer not to say    
+            </option>
+          </select>
+    </fieldset>
+
+    <fieldset id="segment">
+      <label id="opinion">In your opinion, is it obvious who will win the next Fifa Ballon d'Or, or is it difficult to predict? 
+      </label>
+
+      <ul class="no-bullet-list">
+       <li><input id="obvious" type="radio" value="obvious" name="radio" class="radio"/>
+         Of course, it is obvious.
+       </li>
+       <li><input id="closecall" type="radio" value="closecall" name="radio" class="radio" />
+         I do not think it will be straighforward.
+       </li>
+       <li><input id="noidea" type="radio" value="noidea" name="radio" class="radio" />
+         I have no idea.
+       </li>
+      </ul>
+   
+      <label id="playerlist">Current Candidates (select one or more players):  
+      </label>
+
+      <ul class="no-bullet-list">
+        <li>
+         <input id="messi" type="checkbox" name="checkbox" class="checkbox" value="1">
+          Lionel Messi
+        </li>
+        <li>
+         <input id="haaland" type="checkbox" name="checkbox" class="checkbox" value="2">
+          Erling Haaland
+        </li>
+        <li><input id="bruyne" type="checkbox" name="checkbox" class="checkbox" value="3">
+          Kevin De Bruyne
+        </li>
+
+        <li><input id="gundogan" type="checkbox" name="checkbox" class="checkbox" value="4">
+          Ilkay Gundogan
+        </li>
+
+        <li><input id="rodri" type="checkbox" name="checkbox" class="checkbox" value="5">
+          Rodri
+        </li>   
+
+        <li><input id="vinicious" type="checkbox" name="checkbox" class="checkbox" value="6">
+          Vinicius Junior
+        </li>
+
+        <li><input id="mbappe" type="checkbox" name="checkbox" class="checkbox" value="7">
+          Kylian Mbappe
+        </li>
+        
+        <li><input id="benzema" type="checkbox" name="checkbox" class="checkbox" value="8">
+          Karim Benzema
+        </li>
+      </ul>
+     </fieldset> 
+
+
+     <label class="comment">Do you have any comments or suggestions for this poll?
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>  
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+</body>
+</html>
